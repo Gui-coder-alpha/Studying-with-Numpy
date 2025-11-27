@@ -52,3 +52,27 @@ new_axis2 = axis_column[np.newaxis,:]
 print(new_axis)
 print(axis_column)
 print("-----------------separate-----------------")
+
+#broadcast é um forma de realizar operações com os arrays
+#Tal que cada array pode ter uma dimensão x
+#As operações devem ter dimensões iguais
+
+array_2d = np.array([[4,4,3],
+                    [4,2,1]])
+
+array_2d_determinant = np.array([[1,2],
+                                [1,2],
+                                [5,5]])
+
+escalar_value = 5
+sum_value = 100
+
+print("Escalar value:")
+print(array_2d * escalar_value)
+print("..")
+print("Sum value:")
+print(array_2d + sum_value)
+print("..")
+print("Determinant:")
+print(array_2d @ array_2d_determinant)
+print("-----------------separate-----------------")
