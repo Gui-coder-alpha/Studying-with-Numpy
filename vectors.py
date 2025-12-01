@@ -62,7 +62,7 @@ array_2d = np.array([[4,4,3],
 
 array_2d_determinant = np.array([[1,2],
                                 [1,2],
-                                [5,5]])
+                                [5,5]]) #Nota: determinantes tem regras específicas,junte a coluna da primeira matriz com a linha da segunda matriz, formando uma matriz de tamanho variado das duas.
 
 escalar_value = 5
 sum_value = 100
@@ -71,7 +71,7 @@ print("Escalar value:")
 print(array_2d * escalar_value)
 print("..")
 print("Sum value:")
-print(array_2d + sum_value)
+print(array_2d + sum_value)  #Isso é broadcasting
 print("..")
 print("Determinant:")
 print(array_2d @ array_2d_determinant)
